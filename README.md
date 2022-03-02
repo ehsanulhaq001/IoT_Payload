@@ -2,7 +2,7 @@
 
 ## Gateway Payload
 
-```javascript
+```python
 {
     "device": {
         "type": "gateway",
@@ -30,7 +30,7 @@
 
 ## Sensor Payload
 
-```javascript
+```python
 {
     "device": {
         "type": "sensor",
