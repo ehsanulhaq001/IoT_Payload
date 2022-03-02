@@ -114,7 +114,7 @@ device.publish(
 );
 
 const createPayload = (device, condition, settings, data, published_at) => {
-    {
+    return {
         device,
         message: {
             metadata: {
