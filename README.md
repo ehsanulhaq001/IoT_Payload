@@ -1,5 +1,11 @@
 # Payload Design
 
+Designed in a way to ensure same code can be used for both **gateway** as well as **sensor**.
+
+_Payload from sensor can be directly passed as data for gateway payload and so on to higher levels._
+
+This ensures that the code used to extract data is **reusable** at multiple levels.
+
 ## Gateway Payload
 
 ```json
