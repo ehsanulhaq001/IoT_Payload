@@ -1,0 +1,28 @@
+{
+    "device": {
+        "type": "sensor",
+        "id": "#####_sensor_id_#####"
+    },
+    "message": {
+        "metadata": {
+            "condition": {
+                "bat_percentage": 86.66666666666667,
+                "count": 226,
+                "events": "motion",
+                "status": 1,
+                "temp": 6,
+                "time": 0,
+                "voltage": 3.6
+            },
+            "settings": {
+                "property": "value"
+            }
+        },
+        "data": {
+            "sensor_type": "Temperature or Accelerometer",
+            "value": "6 or 'x: 0.0, y: 0.0, z: 0.0'",
+            "unit": "C or m/s^2"
+        },
+        "published_at": "2020-01-15T16:02:10.668892406Z"
+    }
+}
