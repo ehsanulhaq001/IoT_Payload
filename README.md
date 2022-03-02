@@ -60,7 +60,7 @@
 }
 ```
 
-## How to implement
+## Example
 
 ```javascript
  const sensor_payload = createPayload({
