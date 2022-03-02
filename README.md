@@ -2,11 +2,11 @@
 
 ## Gateway Payload
 
-```json
+```javascript
 {
     "device": {
         "type": "gateway",
-        "id": "#####_gateway_id_#####"
+        "id": "gateway_id
     },
     "message": {
         "metadata": {
@@ -30,7 +30,7 @@
 
 ## Sensor Payload
 
-```json
+```javascript
 {
     "device": {
         "type": "sensor",
