@@ -12,7 +12,7 @@ This ensures that the code used to extract data is **reusable** at multiple leve
 {
     "device": {
         "type": "gateway",
-        "id": "gateway_id"
+        "id": "001"
     },
     "message": {
         "metadata": {
@@ -28,7 +28,11 @@ This ensures that the code used to extract data is **reusable** at multiple leve
                 "property": "value"
             }
         },
-        "data": "sensor_payload",
+        "data_count": 2,
+        "data_list": [
+            SENSOR_PAYLOAD_1,
+            SENSOR_PAYLOAD_2
+        ],
         "published_at": "2020-01-15T16:02:10.778892406Z"
     }
 }
@@ -56,11 +60,18 @@ This ensures that the code used to extract data is **reusable** at multiple leve
                 "property": "value"
             }
         },
-        "data": {
-            "sensor_type": "Temperature or Accelerometer",
-            "value": "6 or 'x: 0.0, y: 0.0, z: 0.0'",
-            "unit": "C or m/s^2"
-        },
+        "data_count": 2,
+        "data_list": [
+            {
+            "sensor_type": "Temperature",
+            "value": 31,
+            "unit": "C"
+        },{
+            "sensor_type": "Accelerometer",
+            "value": "x: 0.0, y: 0.0, z: 0.0",
+            "unit": "m/s^2"
+        }
+        ]
         "published_at": "2020-01-15T16:02:10.668Z"
     }
 }
@@ -81,7 +92,8 @@ This ensures that the code used to extract data is **reusable** at multiple leve
             voltage: 3.6
         }, {
             property: "value"
-        }, {
+        },
+        [{
             sensor_type: "Accelerometer",
             value: {
                 x: Math.random() * 2 - 1,
@@ -89,7 +101,7 @@ This ensures that the code used to extract data is **reusable** at multiple leve
                 z: Math.random() * 4 + 7.801
             },
             unit: "m/s^2",
-        },
+        }],
         new Date().toISOString()
     )
 
@@ -105,7 +117,7 @@ const gateway_payload = createPayload({
             voltage: 3.6
         }, {
             property: "value"
-        }, sensor_payload,
+        }, [sensor_payload],
         new Date().toISOString(), )
 
 device.publish(
@@ -121,6 +133,7 @@ const createPayload = (device, condition, settings, data, published_at) => {
                 condition,
                 settings
             },
+            data_count: data.length,
             data,
             published_at
         }

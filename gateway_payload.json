@@ -1,7 +1,7 @@
 {
     "device": {
         "type": "gateway",
-        "id": "#####_gateway_id_#####"
+        "id": "01"
     },
     "message": {
         "metadata": {
@@ -17,34 +17,76 @@
                 "property": "value"
             }
         },
-        "data": {
-            "device": {
-                "type": "sensor",
-                "id": "#####_sensor_id_#####"
-            },
-            "message": {
-                "metadata": {
-                    "condition": {
-                        "bat_percentage": 86.66666666666667,
-                        "count": 226,
-                        "events": "motion",
-                        "status": 1,
-                        "temp": 6,
-                        "time": 0,
-                        "voltage": 3.6
+        "data_count": 2,
+        "data_list": [{
+                "device": {
+                    "type": "sensor",
+                    "id": "0001"
+                },
+                "message": {
+                    "metadata": {
+                        "condition": {
+                            "bat_percentage": 86.66666666666667,
+                            "cycle_count": 226,
+                            "status": 1,
+                            "temp": 6,
+                            "time": 0,
+                            "voltage": 3.6
+                        },
+                        "settings": {
+                            "property": "value"
+                        }
                     },
-                    "settings": {
-                        "property": "value"
-                    }
+                    "data_count": 2,
+                    "data_list": [{
+                            "sensor_type": "Temperature",
+                            "value": 31,
+                            "unit": "C"
+                        },
+                        {
+                            "sensor_type": "Accelerometer",
+                            "value": "x: 0.0, y: 0.0, z: 0.0",
+                            "unit": "m/s^2"
+                        }
+                    ],
+                    "published_at": "2020-01-15T16:02:10.668Z"
+                }
+            },
+            {
+                "device": {
+                    "type": "sensor",
+                    "id": "0002"
                 },
-                "data": {
-                    "sensor_type": "Temperature or Accelerometer",
-                    "value": "6 or 'x: 0.0, y: 0.0, z: 0.0'",
-                    "unit": "C or m/s^2"
-                },
-                "published_at": "2020-01-15T16:02:10.668892406Z"
+                "message": {
+                    "metadata": {
+                        "condition": {
+                            "bat_percentage": 86.66666666666667,
+                            "cycle_count": 226,
+                            "status": 1,
+                            "temp": 6,
+                            "time": 0,
+                            "voltage": 3.6
+                        },
+                        "settings": {
+                            "property": "value"
+                        }
+                    },
+                    "data_count": 2,
+                    "data_list": [{
+                            "sensor_type": "Temperature",
+                            "value": 31,
+                            "unit": "C"
+                        },
+                        {
+                            "sensor_type": "Accelerometer",
+                            "value": "x: 0.0, y: 0.0, z: 0.0",
+                            "unit": "m/s^2"
+                        }
+                    ],
+                    "published_at": "2020-01-15T16:02:10.668Z"
+                }
             }
-        },
+        ],
         "published_at": "2020-01-15T16:02:10.778892406Z"
     }
 }
