@@ -17,7 +17,7 @@ This ensures that the code used to extract data is **reusable** at multiple leve
     "message": {
         "metadata": {
             "condition": {
-                "bat_percentage": 86.66666666666667,
+                "bat_percentage": 86.7,
                 "cycle_count": 226,
                 "status": 1,
                 "temp": 6,
@@ -49,7 +49,7 @@ This ensures that the code used to extract data is **reusable** at multiple leve
     "message": {
         "metadata": {
             "condition": {
-                "bat_percentage": 86.66666666666667,
+                "bat_percentage": 86.7,
                 "cycle_count": 226,
                 "status": 1,
                 "temp": 6,
@@ -84,7 +84,7 @@ This ensures that the code used to extract data is **reusable** at multiple leve
             type: "sensor",
             id: "0001",
         }, {
-            bat_percentage: 86.66666666666667,
+            bat_percentage: 86.7,
             cycle_count: 226,
             status: 1,
             temp: 6,
