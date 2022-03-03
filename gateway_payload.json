@@ -6,7 +6,7 @@
     "message": {
         "metadata": {
             "condition": {
-                "bat_percentage": 86.66666666666667,
+                "bat_percentage": 86.7,
                 "cycle_count": 226,
                 "status": 1,
                 "temp": 6,
@@ -26,7 +26,7 @@
                 "message": {
                     "metadata": {
                         "condition": {
-                            "bat_percentage": 86.66666666666667,
+                            "bat_percentage": 86.7,
                             "cycle_count": 226,
                             "status": 1,
                             "temp": 6,
@@ -60,7 +60,7 @@
                 "message": {
                     "metadata": {
                         "condition": {
-                            "bat_percentage": 86.66666666666667,
+                            "bat_percentage": 77.1,
                             "cycle_count": 226,
                             "status": 1,
                             "temp": 6,
@@ -83,10 +83,10 @@
                             "unit": "m/s^2"
                         }
                     ],
-                    "published_at": "2020-01-15T16:02:10.668Z"
+                    "published_at": "2020-01-15T16:02:10.678Z"
                 }
             }
         ],
-        "published_at": "2020-01-15T16:02:10.778892406Z"
+        "published_at": "2020-01-15T16:02:10.778Z"
     }
 }

@@ -30,10 +30,10 @@ This ensures that the code used to extract data is **reusable** at multiple leve
         },
         "data_count": 2,
         "data_list": [
-            SENSOR_PAYLOAD_1,
-            SENSOR_PAYLOAD_2
+            "+++SENSOR_PAYLOAD_1+++",
+            "+++SENSOR_PAYLOAD_2+++"
         ],
-        "published_at": "2020-01-15T16:02:10.778892406Z"
+        "published_at": "2020-01-15T16:02:10.778Z"
     }
 }
 ```
@@ -109,7 +109,7 @@ const gateway_payload = createPayload({
             type: "gateway",
             id: "01",
         }, {
-            bat_percentage: 86.66666666666667,
+            bat_percentage: 86.7,
             cycle_count: 226,
             status: 1,
             temp: 6,
